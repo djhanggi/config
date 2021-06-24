@@ -1,0 +1,40 @@
+%Image::ExifTool::UserDefined::Shortcuts = (
+    AllDateTags => [
+      'DateTimeOriginal',
+      'CreateDate',
+      'ModifyDate',
+      'FileCreateDate',
+      'FileModifyDate',
+      'MediaCreateDate',
+      'MediaModifyDate',
+      'TrackCreateDate',
+      'TrackModifyDate',
+    ],
+);
+
+%Image::ExifTool::UserDefined = (
+    'Image::ExifTool::Composite' => {
+        EarliestDate => {
+            Desire => {
+                0 => 'DateTimeOriginal',
+                1 => 'CreateDate',
+                2 => 'ModifyDate',
+                3 => 'FileCreateDate',
+                4 => 'FileModifyDate',
+                5 => 'MediaCreateDate',
+                6 => 'MediaModifyDate',
+                7 => 'TrackCreateDate',
+                8 => 'TrackModifyDate',
+            },
+            ValueConv => q{
+      				my ($earliest) = (sort {$a cmp $b} grep $_, @val)[0];
+      				return $earliest;
+      			},
+            PrintConv => '$self->ConvertDateTime($val)',
+        },
+    },
+);
+
+%Image::ExifTool::UserDefined::Options = (
+    LargeFileSupport => 1,
+);

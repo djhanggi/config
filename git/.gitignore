@@ -1,0 +1,7 @@
+.DS_Store
+.Spotlight-V100/
+.fseventsd/
+.Trashes
+rclone.conf
+.zsh_history
+.zcompdump

@@ -1,0 +1,74 @@
+[user]
+  name = "Daniel J. Hanggi"
+  email = "djhanggi@gmail.com"
+
+[alias]
+  aliases = config --get-regexp alias
+  amend = commit --amend --reuse-message=HEAD
+  ap = "!git add -p"
+  branches = branch -a
+  bv = branch -vv
+  ca = !git add -A && git commit -av
+  d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+  go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+  graph = log --graph --all --decorate --stat --date=iso
+  l = log --pretty=oneline -n 20 --graph --abbrev-commit
+  rbn = "!r() { git rebase -i HEAD~$1; }; r"
+  recap = log --all --oneline --no-merges --author="djhanggi@gmail.com"
+  remotes = remote -v
+  s = status -s
+  tags = tag -l
+  today = log --since=00:00:00 --all --no-merges --oneline --author="djhanggi@gmail.com"
+
+[apply]
+  whitespace = fix
+
+[branch]
+  autosetupmerge = always
+  autosetuprebase = always
+
+[core]
+  autocrlf = input
+  editor = vim
+	excludesfile = ~/.config/git/.gitignore
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red
+  new = green
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+[commit]
+	template = ~/.config/git/.git-template-commit
+
+[diff]
+  renames = copies
+
+[difftool]
+  prompt = false
+
+[help]
+  autocorrect = 1
+
+[init]
+  defaultBranch = main
+
+[merge]
+  ff = only
+  log = true
+
+[pull]
+  ff = only
+
+[push]
+  default = current

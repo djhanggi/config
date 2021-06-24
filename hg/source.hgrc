@@ -1,0 +1,10 @@
+[ui]
+username = Daniel J. Hanggi <djhanggi@gmail.com>
+tweakdefaults = True
+paginate = never
+
+[extensions]
+absorb =
+histedit =
+rebase =
+uncommit =
