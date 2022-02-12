@@ -55,6 +55,7 @@ brew install --cask github
 brew install --cask google-backup-and-sync
 brew install --cask google-chrome
 brew install --cask handbrake
+brew install --cask java
 # brew install --cask kdiff3
 # brew install --cask logitech-options
 brew install --cask makemkv
