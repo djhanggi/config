@@ -9,12 +9,17 @@
   branches = branch -a
   bv = branch -vv
   ca = !git add -A && git commit -av
+  changed-files = diff --name-only @{u}...HEAD
+  chf = changed-files
+  changes = diff @{u}...HEAD
+  ch = changes
   d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
   go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
   graph = log --graph --all --decorate --stat --date=iso
   l = log --pretty=oneline -n 20 --graph --abbrev-commit
   rbn = "!r() { git rebase -i HEAD~$1; }; r"
   recap = log --all --oneline --no-merges --author="djhanggi@gmail.com"
+  remote-prune = fetch --prune
   remotes = remote -v
   s = status -s
   tags = tag -l
