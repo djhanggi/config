@@ -9,3 +9,5 @@ configstore/
 rclone.conf
 .zsh_history
 .zcompdump
+
+.zcompcache/

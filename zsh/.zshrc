@@ -14,3 +14,7 @@ setopt HIST_IGNORE_ALL_DUPS
 
 # Completions
 autoload -Uz compinit && compinit
+
+if [[ -f "$HOME/.zshrc" ]]; then
+  source "$HOME/.zshrc"
+fi
