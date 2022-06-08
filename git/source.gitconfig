@@ -17,6 +17,7 @@
   d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
   graph = log --graph --all --decorate --stat --date=iso
   l = log --pretty=oneline -n 20 --graph --abbrev-commit
+  pushall = !"git remote | xargs -L1 git push --all"
   rbn = "!r() { git rebase -i HEAD~$1; }; r"
   recap = log --all --oneline --no-merges --author="djhanggi@gmail.com"
   remote-prune = fetch --prune
