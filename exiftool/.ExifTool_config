@@ -26,6 +26,7 @@
                 7 => 'TrackCreateDate',
                 8 => 'TrackModifyDate',
                 9 => 'GPSDateTime'
+                10 => 'filename',
             },
             ValueConv => q{
             my $oldest = undef;
