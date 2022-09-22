@@ -6,6 +6,7 @@ brew upgrade
 BREW_PREFIX=$(brew --prefix)
 
 brew install android-platform-tools
+brew install bitwarden-cli
 # brew install brew-cask-completion
 brew install coreutils
 brew install docker-compose
