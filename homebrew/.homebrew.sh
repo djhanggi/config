@@ -23,6 +23,7 @@ brew install grep
 brew install homeassistant-cli
 brew install imagemagick
 brew install jq
+brew install markdownlint-cli
 brew install mercurial
 brew install moreutils
 brew install openssh
