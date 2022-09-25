@@ -42,7 +42,6 @@ brew install yarn
 brew install yq
 brew install zsh-completion
 
-brew install --cask android-messages
 brew install --cask android-platform-tools
 # brew install --cask bitwarden # App Store version allows Touch ID
 brew install --cask discord
@@ -62,6 +61,7 @@ brew install --cask maccy
 brew install --cask makemkv
 brew install --cask messenger
 brew install --cask musescore
+brew install --cask orangedrangon-android-messages
 brew install --cask plex
 brew install --cask pocket-casts
 # brew install --cask pokerstars
