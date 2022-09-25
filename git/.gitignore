@@ -7,4 +7,6 @@
 .zsh_history
 configstore/
 gh/
+gtk-2.0/
+mume/
 rclone.conf
