@@ -13,6 +13,7 @@ module.exports = {
         ({ opener }) => opener.path?.includes("Discord"),
         ({ opener }) => opener.path?.includes("Messenger"),
         /^https?:\/\/tamacteam\.slack\.com\/.*$/,
+        finicky.matchDomains(["twitter.com"]),
       ],
       browser: "Firefox",
     },
