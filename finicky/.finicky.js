@@ -7,6 +7,7 @@ module.exports = {
   handlers: [
     {
       match: [
+        // Test
         () => finicky.getKeys().option,
         ({ url }) => url.host.startsWith(192.168),
         ({ opener }) => opener.path?.includes("Bitwarden"),
